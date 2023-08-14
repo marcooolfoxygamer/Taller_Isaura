@@ -1,73 +1,92 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
     text-align: center;
-    font-family:Verdana, Tahoma, sans-serif;
 }
-#container{
+
+#container {
     width: 98%;
     height: 100%;
     margin: 0 auto;
     border: 1px solid gray;
     box-shadow: 0px 2px 8px;
 }
-#header{
+
+#header {
     background-color: #35729b;
     border-bottom: 1px solid rgb(217, 204, 204);
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    padding: 10px 20px;
 }
-#logo{
+
+#logo {
     flex-grow: 1;
     flex-basis: 50%;
     margin-left: 20px;
 }
-#logo h1{
+
+#logo h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     text-transform: uppercase;
     color: white;
 }
-.content{
+
+.content {
     display: flex;
     flex-flow: row wrap;
     padding: 5px 20px;
 }
-.content #left{
+
+.content #right h2 {
+    text-align: left;
+}
+
+.content #left {
     flex-grow: 2;
     flex-basis: 20%;
     padding: 10px 15px;
-    /* margin-right: 10px; */
     z-index: 2;
-    /* display: block; */
-    /* position: absolute; */
 }
-.content #left div{
+
+.content #left div {
     display: flex;
     flex-flow: column wrap;
 }
-.content #left div ul{
+
+.content #left div ul {
     list-style: none;
     padding: 0px;
 }
-.content #left div li{
+
+.content #left div li {
     background-color: rgb(192, 131, 62);
     padding: 10px;
     margin-bottom: 2px;
     transition: all 150ms;
 }
-.content #left div li:hover{
+
+.content #left div li:hover {
     background: rgb(192, 162, 127);
 }
-.content #left div a{
+
+.content #left div a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
     transition: all 150ms;
     font-weight: bolder;
 }
-.content #left div a:hover{
+
+.content #left div a:hover {
     color: rgb(255, 255, 255);
 }
-.content #right{
+
+.content #right {
     flex-grow: 1;
     flex-basis: 70%;
     display: flex;
@@ -75,19 +94,22 @@
     justify-content: space-between;
     padding: 20px 30px;
 }
-.content #right h2{
+
+.content #right h2 {
     color: #35729b;
     font-size: 25px;
     margin: 20px 0;
     padding: 0 18px 6px 0;
     border-bottom: 1px solid #35729b;
 }
-.content #right p{
+
+.content #right p {
     text-align: left;
     line-height: 2;
     margin: 10px 0 40px 0;
 }
-footer{
+
+footer {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -95,16 +117,47 @@ footer{
     height: 50px;
     border-top: 1px solid #ccc;
 }
-footer #logo{
+
+footer #logo {
     flex-grow: 1;
     flex-basis: 48%;
     text-align: right;
     margin-left: 0;
     padding: 5px;
 }
-#f_right{
+
+#f_right {
     flex-grow: 2;
     flex-basis: 48%;
     text-align: left;
     padding: 5px;
+}
+
+.lista {
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px; 
+}
+
+.lista li {
+    margin-bottom: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.sticky-menu {
+    position: fixed;
+    top: 50px; 
+    left: 2%;
+    width: 20%; /* Ancho del menú lateral */
+    height: 100vh; /* Altura del menú igual al alto de la ventana */
+    padding: 10px 15px;
+    z-index: 2;
+    overflow-y: auto; /* Habilitar el scroll si el contenido es más largo */
+    left: 2%;
+}
+
+.content {
+    margin-left: 20%; /* Dejar espacio en la parte izquierda para el menú */
+    padding: 5px 20px;
 }

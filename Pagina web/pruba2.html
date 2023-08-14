@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prueba2.css">
+    <title>TCP/IP</title>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="logo">
+                <h1>TCP/IP</h1>
+            </div>
+        </header>
+        <section class="content">
+            <div class="title-and-menu">  
+
+                <aside id="left" class="sticky-menu">
+                    <div>
+                        <ul>
+                            <li><a href="#">Principal</a></li>
+                            <li><a href="#titulo_ejemplo">¿Qué es TCP/IP?</a></li>
+                            <li><a href="#titulo_ejemplo2">¿Para qué sirve?</a></li>
+                            <li><a href="#titulo_ejemplo3">Usos y Capas</a></li>
+                            <li><a href="#titulo_ejemplo4">¿Cómo funciona?</a></li>
+                            <li><a href="#titulo_ejemplo5">Ventajas y desventajas</a></li>
+                            <li><a href="#titulo_ejemplo6">Ejemplo</a></li>
+                            <li><a href="#titulo_ejemplo7">Conclusiones</a></li>
+                            <li><a href="#titulo_ejemplo8">Juego</a></li>
+                            <li><a href="#titulo_ejemplo9">Referencias</a></li>
+                            
+                        </ul>
+                    </div>
+                </aside>  
+            </div>
+            <div id="right">
+                <video controls width="100%">
+                    <source src="img/nombre_del_video.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+                
+                <h2 id="titulo_ejemplo">¿Qué es TCP/IP?</h2>
+                <p>
+                    TCP/IP, que significa Protocolo de Control de Transmisión/Protocolo de Internet, es un conjunto de protocolos de red que se utiliza para permitir la comunicación y el intercambio de datos entre dispositivos conectados en una red, incluido Internet. Es probable el conjunto de reglas y normas que permiten que diferentes dispositivos en diferentes redes puedan comunicarse y compartir información.
+                    Los protocolos representan conjuntos de directrices que establecen formatos de mensajes y procedimientos, permitiendo a las máquinas y programas intercambiar información. Para lograr una comunicación efectiva, todas las máquinas involucradas deben obedecer estas normas, lo que resulta esencial para comprender TCP/IP (Robledano, 2023).
+
+                </p>
+                <h2 id="titulo_ejemplo2">¿Para qué sirve? </h2>
+                <p>
+                    TCP/IP sirve para facilitar la comunicación y el intercambio de datos entre dispositivos en una red, lo que incluye la transferencia de información en internet. Es responsable de garantizar que los datos se entreguen de manera segura y confiable a través de la red.
+                    TCP, o Protocolo de Control de Transmisión, desempeña el papel fundamental de permitir el establecimiento de conexiones y el intercambio de datos entre dos dispositivos en una red. La característica destacada de este protocolo es su capacidad para garantizar la confiabilidad en la transmisión de información, asegurando que los datos se entreguen de manera precisa y sin pérdida (Fisher, 2021). Por otro lado, IP, conocido como Protocolo de Internet, se encarga de asignar direcciones únicas a cada dispositivo en la red. Estas direcciones están compuestas por cuatro conjuntos de números con formato decimal, lo que se conoce comúnmente como dirección IP. Esta dirección es esencial para direccionar los datos correctamente hacia sus destinos en la red, asegurando que lleguen a las máquinas adecuadas (documentación de IBM). Un elemento crucial del protocolo TCP/IP es la fragmentación de los mensajes en paquetes más pequeños. Cada paquete de datos puede seguir una ruta diferente a través de la red, lo que aumenta tanto la eficiencia como la adaptabilidad del sistema. Esta característica es particularmente útil en situaciones de congestión o cuando las rutas normales no están disponibles. La fragmentación y el enrutamiento de paquetes permiten que la red pueda manejar situaciones cambiantes de manera más efectiva y eficiente (Modelo de arquitectura del protocolo TCP/IP).
+                    
+                </p>
+
+                <h2 id="titulo_ejemplo3">Usos y capas</h2>
+
+                <p>
+                    El protocolo divide las tareas de comunicación en diferentes capas, cada una con funciones específicas. Los datos atraviesan estas capas antes de llegar al destinatario, y luego el proceso se invierte para reconstituir los datos (Bodnar, 2022). <br>
+                    Estas capas se diseñaron para estandarizar la comunicación sin importar el fabricante del hardware o software. Similar a los pedales en un automóvil, esta uniformidad permite actualizaciones selectivas sin perturbar todo el sistema (Robledano, 2023).
+
+                </p>
+
+                <div class="lista">
+                    <li>Navegación web: permite acceder a sitios web utilizando el protocolo HTTP/HTTPS.</li>
+                    <li>Correo electrónico: permite enviar y recibir correos electrónicos utilizando protocolos como SMTP, POP3 e IMAP.</li>
+                    <li>Transferencia de archivos: posibilita la transferencia de archivos entre dispositivos mediante el protocolo FTP.</li>
+                    <li>Comunicación en tiempo real: es la base para aplicaciones de videoconferencia, streaming y llamadas VoIP.</li>
+                    <li>Acceso remoto: permite la conexión remota a una computadora a través del protocolo Telnet.</li>
+                    <li>Aplicaciones multimedia: permite la transmisión de audio y video a través de protocolos como RTP y RTSP.</li>
+                    <li>Capa de enlace de datos, “maneja las partes físicas del envío y recepción de datos, esto abarca elementos como los cables Ethernet, redes inalámbricas como Wi-Fi, tarjetas de interfaz de red o controladores de dispositivos en el ordenador” (Bodnar, 2022).</li>
+                    <li>Capa de internet o red, “controla el flujo y el enrutamiento para garantizar que los datos se envían de forma rápida y correcta”(Bodnar, 2022).</li>
+                    <li>Capa de transporte, “es la que proporciona una conexión de datos fiable entre los dispositivos de comunicación. Para ello divide los datos en paquetes, confirmó los que recibe del remitente o usuario y se asegura que el destinatario verifique los paquetes que recibe”(Fisher, 2021).</li>
+                    <li>Capa de aplicación, “es con lo que interactúa el usuario, bien sea el correo electrónico y la mensajería. Como capa inferior, se encarga de gestionar los detalles de la comunicación”(Fisher, 2021).</li>
+                </div>
+
+                
+                <h2 id="titulo_ejemplo4">¿Cómo funciona? </h2>
+                <p>
+                    TCP/IP funciona a través de la división de datos en paquetes más pequeños (datagramas) y su posterior transmisión a través de la red. Los datos se transmiten desde una fuente a un destino a través de una serie de enrutadores y dispositivos intermedios. Los protocolos TCP e IP trabajan juntos para garantizar la entrega confiable y la secuencia correcta de estos paquetes, asegurando la integridad de la comunicación.
+                </p>
+
+                
+                <h2 id="titulo_ejemplo5">Ventajas y desventajas</h2>
+                <p>
+                    Las características distintivas que hacen brillar a este modelo, el cual es ampliamente adoptado en la actualidad, son aquellas que nos ofrece, según Luz (2023)
+
+                </p>
+
+                <div class="lista">
+                    <li>Al ser un modelo estandarizado en la industria por lo que se implementa de forma factible en distintas plataformas. Esto lo hace interoperabilidad entre redes heterogéneas.</li>
+                    <li>Es una suite de protocolo abierto, lo que significa que está disponible para el público sin cargo, por lo que puede ser utilizado por cualquier individuo u organización.</li>
+                    <li>Asignando una dirección IP a cada ordenador de la red, hace que cada dispositivo sea identificable. Asignando a cada sitio un nombre de dominio, siendo así una arquitectura de Cliente-Servidor escalable, sin interrumpir los servicios actuales.</li>
+                    <li>De Luz(2023), indica que no es de carácter genérico por lo que no puede representar ningún conjunto de protocolos que no sea de la suite TCP/IP. Por ejemplo, sería incapaz de describir la conexión Bluetooth.</li>
+                    <li>Robledano (2023), señala que en redes con bajos volúmenes de tráfico como LAN(red de área local) y PAN (red de área personal), el rendimiento de TCP/IP puede verse afectado. Pues está pensado para funcionar en entornos con un alto volumen de tráfico y un enrutamiento más complejo, donde el rendimiento puede mejorar significativamente, incluso superando a otros protocolos en términos de velocidad.</li>
+                    
+
+                <h2 id="titulo_ejemplo6">Ejemplo </h2>
+                <p>
+                    TCP/IP se erige como el conjunto de protocolos más utilizado en internet, incluido en la mayoría de las computadoras. Su uso es tan habitual que la mayoría de las personas no se percatan de estar aplicándolo (Fisher, 2021). No obstante, su prevalencia no garantiza su seguridad (Bodnar, 2022).
+                </p>
+                <h2 id="titulo_ejemplo7">Conclusiones </h2>
+                <p>
+                    TCP/IP es la columna vertebral de Internet y de muchas redes modernas. Su diseño descentralizado y su capacidad para interconectar redes heterogéneas han permitido la creación de un ecosistema global de comunicación. Aunque tiene sus orígenes en objetivos militares, TCP/IP ha evolucionado para convertirse en una herramienta esencial para la comunicación, colaboración y acceso a la información en todo el mundo.
+                </p>
+
+                <h2 id="titulo_ejemplo8">Juego</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus omnis, vitae sint aliquid illo eligendi harum, voluptatum, ipsam laborum corrupti autem! A sit vel voluptatibus atque molestiae nam obcaecati eaque.</p>
+
+                <h2 id="titulo_ejemplo9">Referencias</h2>
+                <div class="lista">
+                    <li>Robledano, A. (2023, 13 abril). Qué es TCP/IP. OpenWebinars.net. https://openwebinars.net/blog/que-es-tcpip/</li>
+                    <li>IBM documentation. (s. f.). https://www.ibm.com/docs/es/aix/7.1?topic=protocol-tcpip-protocols</li>
+                    <li>Fisher, S. (2021). ¿Qué es TCP/IP y cómo funciona? ¿Qué es TCP/IP y cómo funciona? https://www.avast.com/es-es/c-what-is-tcp-ip 
+                    </li>
+                    <li>Bodnar, D. (2022). ¿Qué es TCP/IP? ¿Qué es TCP/IP? https://www.avg.com/es/signal/what-is-tcp-ip</li>
+                    <li>Modelo de arquitectura del protocolo TCP/IP (Guía de Administración del Sistema: Servicios IP). (s. f.). https://docs.oracle.com/cd/E19957-01/820-2981/ipov-10/</li>
+                    <li>PROTOCOLOS TCP/IP DE INTERNET. (n.d.). Revista UNAM. Retrieved August 13, 2023, from https://www.ru.tic.unam.mx/bitstream/handle/123456789/791/sep_art51.pdf?sequence= 
+                    </li>
+                    <li>De Luz, S. (2023, 4 agosto). ¿Qué protocolo es mejor?: TCP vs UDP, descubre cuándo usar cada uno. RedesZone. https://www.redeszone.net/tutoriales/internet/tcp-udp-caracteristicas-uso-diferencias/ </li>
+                    <li>Robledano, A. (2023, 13 abril). Qué es TCP/IP. OpenWebinars.net. https://openwebinars.net/blog/que-es-tcpip/ </li>
+                    
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="logo">&copy;Sena</div>
+            <div id="f_right">2023</div>
+        </footer>
+    </div>
+    <script>
+        window.addEventListener("scroll", function() {
+            var stickyMenu = document.querySelector(".sticky-menu");
+            var headerHeight = document.querySelector("#header").offsetHeight;
+            var scrollTop = window.scrollY;
+
+            if (scrollTop > headerHeight) {
+                stickyMenu.style.top = "0";
+            } else {
+                stickyMenu.style.top = (headerHeight - scrollTop) + "px";
+            }
+        });window.onload = function() {
+        window.dispatchEvent(new Event('scroll'));
+    };
+    </script>
+</body>
+</html>
