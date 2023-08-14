@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+
+#container {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    box-shadow: 0px 2px 8px;
+}
+
+/* HEADER DE LA PÁGINA */
+
+.header {
+    background-color: #35729b;
+    border-bottom: 1px solid rgb(217, 204, 204);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+
+#logo h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* CONTENIDO DE LA PÁGINA */
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 20%; 
+}
+
+/* SECCION IZQUIERDA */
+
+.content #left {
+    flex-grow: 2;
+    flex-basis: 20%;
+    padding: 10px 15px;
+    z-index: 2;
+}
+
+.content #left div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.content #left div ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.content #left div li {
+    background-color: rgb(192, 131, 62);
+    padding: 10px;
+    margin-bottom: 2px;
+    transition: all 150ms;
+    width: 100%;
+}
+
+.content #left div li:hover {
+    background: rgb(192, 162, 127);
+}
+
+.content #left div a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 150ms;
+    font-weight: bolder;
+}
+
+.content #left div a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* SECCION DERECHA */
+
+.content #right {
+    flex-grow: 1;
+    flex-basis: 70%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.video{
+    width: 90%;
+    margin: auto;
+}
+
+
+.content #right h2 {
+    width: 100%;
+    text-align: left;
+    color: #35729b;
+    font-size: 25px;
+    margin: 20px 0;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid #35729b;
+}
+
+.content #right p {
+    text-align: left;
+    line-height: 2;
+    margin: 10px 0 30px 0;
+}
+
+.content #right ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content #right li {
+    padding: 7px 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* FOOTER DE LA PAGINA */
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #ccc;
+}
+
+footer #logo {
+    flex-grow: 1;
+    flex-basis: 48%;
+    text-align: right;
+    margin-left: 0;
+    padding: 5px;
+}
+
+#f_right {
+    flex-grow: 2;
+    flex-basis: 48%;
+    text-align: left;
+    padding: 5px;
+}
+
+.sticky-menu {
+    position: fixed;
+    width: 20%; /* Ancho del menú lateral */
+    height: 100vh; /* Altura del menú igual al alto de la ventana */
+    padding: 10px 15px;
+    z-index: 2;
+    overflow-y: auto; /* Habilitar el scroll si el contenido es más largo */
+    left: 2%;
+
+}
+
+.hamburger{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Add a media query for screens with a width of 870px or less */
+@media screen and (max-width: 980px) {
+
+    .content{
+        margin: 0;
+    }
+
+    .video{
+        width: 100%;
+    }    
+
+    .sticky-menu {
+        width: 100%; /* Full width for the hamburger menu */
+        height: auto;
+        display: none; /* Hide the menu by default */
+        background-color: #fff;
+    }
+
+    .sticky-menu.active {
+        display: block; /* Show the menu when active class is added */
+    }
+
+    .content #left{
+        padding: 0;
+        max-width: 98%;
+        left: 1%;
+    }
+
+    /* Style the hamburger button */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #35729b;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .equis{
+        display: block;
+    }
+
+    /* Rotate the divs to form an X shape for close icon */
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
