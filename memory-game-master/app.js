@@ -2,52 +2,52 @@ document.addEventListener('DOMContentLoaded', function () {
     //carta options
     let arregloCartas = [
         {
-            nombre: 'fries',
-            img: 'images/fries.png'
+            nombre: 'P&R_1',
+            img: 'images/P1.jpg'
         },
         {
-            nombre: 'cheeseburger',
-            img: 'images/cheeseburger.png'
+            nombre: 'P&R_2',
+            img: 'images/P2.jpg'
         },
         {
-            nombre: 'ice-cream',
-            img: 'images/ice-cream.png'
+            nombre: 'P&R_3',
+            img: 'images/P3.jpg'
         },
         {
-            nombre: 'pizza',
-            img: 'images/pizza.png'
+            nombre: 'P&R_4',
+            img: 'images/P4.jpg'
         },
         {
-            nombre: 'milkshake',
-            img: 'images/milkshake.png'
+            nombre: 'P&R_5',
+            img: 'images/P5.jpg'
         },
         {
-            nombre: 'hotdog',
-            img: 'images/hotdog.png'
+            nombre: 'P&R_6',
+            img: 'images/P6.jpg'
         },
         {
-            nombre: 'fries',
-            img: 'images/fries.png'
+            nombre: 'P&R_1',
+            img: 'images/R1.jpg'
         },
         {
-            nombre: 'cheeseburger',
-            img: 'images/cheeseburger.png'
+            nombre: 'P&R_2',
+            img: 'images/R2.jpg'
         },
         {
-            nombre: 'ice-cream',
-            img: 'images/ice-cream.png'
+            nombre: 'P&R_3',
+            img: 'images/R3.jpg'
         },
         {
-            nombre: 'pizza',
-            img: 'images/pizza.png'
+            nombre: 'P&R_4',
+            img: 'images/R4.jpg'
         },
         {
-            nombre: 'milkshake',
-            img: 'images/milkshake.png'
+            nombre: 'P&R_5',
+            img: 'images/R5.jpg'
         },
         {
-            nombre: 'hotdog',
-            img: 'images/hotdog.png'
+            nombre: 'P&R_6',
+            img: 'images/R6.jpg'
         }
     ]
 
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cartasElegidasId.push(cardId)
         this.setAttribute('src', arregloCartas[cardId].img)
         if (cartasElegidas.length === 2) {
-            setTimeout(checkForMatch, 500)
+            setTimeout(checkForMatch, 1000)
         }
     }
     //inicio del juego
